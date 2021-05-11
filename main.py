@@ -1,12 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os
 import cv2
-import random
-import uuid
 
 app = Flask(__name__)
-integer = random.randint(691827, 963963)
-name_id = uuid.uuid1()
 
 
 @app.route('/', methods=['POST', "GET"])
@@ -32,5 +28,5 @@ def imagepage():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
