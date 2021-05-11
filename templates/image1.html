@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #test {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img id="test" src="/static/image.png">
+    <script>
+        var timestamp = new Date().getTime();
+        var el = document.getElementById('test');
+        el.src = '/static/image.png?t=' + timestamp;
+    </script>
+</body>
+</html>
